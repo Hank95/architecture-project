@@ -1,10 +1,19 @@
-// const link = document.querySelectorAll(".grid-item");
-// const logo = document.querySelector(".nav");
+"use strict";
 
-// link.forEach((el) => {
-//   console.log(el);
-//   el.addEventListener("mouseover", function (e) {
-//     console.log(e);
-//     e.classList.remove(".hidden");
-//   });
-// });
+const burger = document.querySelector("#burger-menu");
+const arrow = document.querySelector("#arrow");
+const menu = document.querySelector("#menu");
+
+const openMenu = function () {
+  menu.classList.remove("hidden");
+  burger.classList.add("hidden");
+};
+
+const closeMenu = function () {
+  menu.classList.add("hidden");
+  burger.classList.remove("hidden");
+};
+
+burger.addEventListener("click", openMenu);
+
+arrow.addEventListener("click", closeMenu);

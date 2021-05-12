@@ -22,11 +22,39 @@ nav h1 {
   padding-top: 20px;
   font-size: 45px;
 }
+.nav-link {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.nav-link:hover {
+  color: #ff6f1b;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#burger {
+  position: absolute;
+  bottom: 0;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+#burger:hover {
+  color: #ff6f1b;
+}
 .about {
   position: absolute;
   bottom: 0;
   align-content: center;
   text-align: center;
+  width: 100%;
+}
+.hidden {
+  display: none;
 }
 .container {
   margin-left: 25%;
